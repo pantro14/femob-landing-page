@@ -3,11 +3,16 @@
         text-align: center;
         .icon-cap {
             display: inline-block;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-            margin-bottom: 1rem;
-            i {
-                font-size: 3rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem;
+            img {
+                margin-top: 1rem;
+            }
+        }
+        .content-cap{
+            p {
+                font-size: small;
+                line-height: 1.2rem;
             }
         }
         padding: 2rem;

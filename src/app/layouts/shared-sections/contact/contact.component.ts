@@ -15,9 +15,13 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.email]],
-      subject: ['', [Validators.required]],
+      telephone: ['', [Validators.required]],
       message: ['', Validators.required]
     })
+  }
+
+  onSubmit() {
+    console.log('entra submit');
   }
 
 }

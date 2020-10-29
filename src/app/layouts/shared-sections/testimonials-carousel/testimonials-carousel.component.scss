@@ -1,16 +1,19 @@
 
 .testimonials-section {
     .user-content p {
-        font-size: 1.4rem !important;
-        line-height: 1.3;
+        font-size: 0.8rem !important;
+        line-height: 1;
         font-weight: lighter;
+    }
+    .user-title {
+        font-size: 1.2rem !important;
     }
 }
 
 .testimonial-img {
     img {
-        width: 80px !important;
-        height: 80px;
+        width: 150px !important;
+        height: 150px;
         margin-bottom: 1rem;
         border-radius: 100%;
     }

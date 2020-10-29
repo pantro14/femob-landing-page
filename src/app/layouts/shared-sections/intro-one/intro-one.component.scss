@@ -51,10 +51,19 @@
   font-size: 14px;
 }
 
+@media (max-width: 1200px) {
+  .intro-product {
+    width: 70%;
+    top: 80px;
+    left: 150px;
+  }
+}
+
 @media (max-width: 767px) {
     .intro-product {
+      width: 70%;
       top: 80px;
-      left: 20px;
+      left: 90px;
       margin-bottom: 4rem;
     }
   .home-intro-section {
