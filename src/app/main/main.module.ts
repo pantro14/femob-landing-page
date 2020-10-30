@@ -34,6 +34,8 @@ import {TestimonialsComponent} from '../layouts/shared-sections/testimonials/tes
 import {PortfolioCarouselComponent} from '../layouts/shared-sections/portfolio-carousel/portfolio-carousel.component';
 import {TestimonialsCarouselComponent} from '../layouts/shared-sections/testimonials-carousel/testimonials-carousel.component';
 import {ServicesCarouselComponent} from '../layouts/shared-sections/services-carousel/services-carousel.component';
+import {HttpClientModule} from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -53,8 +55,10 @@ import {ServicesCarouselComponent} from '../layouts/shared-sections/services-car
     MatSlideToggleModule,
     MatSnackBarModule,
     MatTabsModule,
+    MatProgressSpinnerModule,
     FlexLayoutModule,
     NguCarouselModule,
+    HttpClientModule,
     RouterModule.forChild(DemoRoutes)
   ],
   declarations: [

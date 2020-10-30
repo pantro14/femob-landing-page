@@ -11,9 +11,6 @@ export class IntroOneComponent implements OnInit {
 
   ngOnInit() {
   }
-  buyAngland() {
-    window.open('');
-  }
   getNGLanding() {
     window.open('');
   }

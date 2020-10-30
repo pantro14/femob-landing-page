@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import {WINDOW} from '../../../shared/helpers/window.helper';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(WINDOW) private window: Window) { }
 
   ngOnInit() {
+  }
+
+  goToFacebook() {
+    this.window.open('https://www.facebook.com/FEMOB-535441916992208/');
+  }
+
+  goToInstragam() {
+    this.window.open('https://www.instagram.com/femob_');
   }
 
 }

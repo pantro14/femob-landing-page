@@ -32,8 +32,4 @@ export class HeaderComponent implements OnInit {
     this.menuOpened = !this.menuOpened
   }
 
-  buyAngland() {
-    this.window.open('');
-  }
-
 }

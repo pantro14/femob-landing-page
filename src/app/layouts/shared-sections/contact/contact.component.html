@@ -11,13 +11,13 @@
                 <div fxFlex="100">
                     <div class="pb-1">
                         <mat-form-field class="full-width">
-                            <input matInput name="name" [formControl]="contactForm.controls['name']" placeholder="Tu Nombree">
+                            <input matInput name="name" [formControl]="contactForm.controls.name" placeholder="Tu Nombre">
                         </mat-form-field>
                         <small *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required" class="form-error-msg">*Required</small>
                     </div>
                     <div class="pb-1">
                         <mat-form-field class="full-width">
-                            <input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Tu Email">
+                            <input matInput name="email" [formControl]="contactForm.controls.email" placeholder="Tu Email">
                         </mat-form-field>
                         <small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email" class="form-error-msg">*Invalid Address</small>
                     </div>
@@ -26,19 +26,22 @@
                 <div fxFlex="100">
                     <div class="pb-1">
                         <mat-form-field class="full-width">
-                            <input matInput name="subject" [formControl]="contactForm.controls['telephone']" placeholder="Tu Teléfono">
+                            <input matInput name="subject" [formControl]="contactForm.controls.telephone" placeholder="Tu Teléfono">
                         </mat-form-field>
                         <small *ngIf="contactForm.controls.telephone.touched && contactForm.controls.telephone.errors?.required" class="form-error-msg">*Required</small>
                     </div>
                     <div class="pb-1">
                         <mat-form-field class="full-width">
-                            <textarea matInput row="8" name="message" [formControl]="contactForm.controls['message']" placeholder="Message"></textarea>
+                            <textarea matInput row="8" name="message" [formControl]="contactForm.controls.message" placeholder="Message"></textarea>
                         </mat-form-field>
                         <small *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required" class="form-error-msg">*Required</small>
                     </div>
                 </div>
 
-                <div fxFlex="100"> <button mat-raised-button mat-lg-button color="accent">Enviar Mensaje</button>
+                <div fxFlex="100" style="text-align: center">
+                    <button *ngIf="!loading && !success" mat-raised-button mat-lg-button color="accent">Enviar Mensaje</button>
+                    <mat-spinner *ngIf="loading" [style.margin]="'auto'" [diameter]="45"></mat-spinner>
+                    <p class="lead w-60" *ngIf="!loading && emailResult" [ngClass]="textCss">{{emailResult}}</p>
                 </div>
             </div>
         </form>

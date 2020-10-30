@@ -9,6 +9,13 @@
 .footer-item {
     padding: 30px;
     box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.2);
+
+    &.social-networks {
+        padding-top: 5% !important;
+        img {
+            width: 2rem;
+        }
+    }
 }
 
 .footer-box:first-child {
@@ -46,6 +53,14 @@
 .text-footer {
     color: #000;
     margin: 0;
+}
+
+.text-social-network {
+    color: #000;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 @media (max-width: 959px) {

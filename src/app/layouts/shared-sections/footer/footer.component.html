@@ -2,34 +2,34 @@
 
     <div class="container">
         <div fxLayout="row nowrap" fxLayout.lt-md="column">
-            <div fxFlex="33.33" class="footer-item">
-                <div class="footer-logo">
-                    <h2>AngLand</h2>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, natus.</p>
-                <button mat-raised-button color="accent">Contact Us</button>
-            </div>
-            <div fxFlex="33.33" class="footer-item">
+            <div fxFlex="50" class="footer-item">
 
                 <mat-list>
                     <mat-list-item>
                         <mat-icon mat-list-icon color="accent">email</mat-icon>
-                        <p class="text-footer"> johndoe@loremipsum.com </p>
+                        <p class="text-footer"> fundacionblanquita@gmail.com </p>
                     </mat-list-item>
                     <mat-list-item>
                         <mat-icon mat-list-icon color="accent">location_on</mat-icon>
-                        <p class="text-footer">New Trent Bridge, 101 Path, Germany</p>
+                        <p class="text-footer">Carrera 22 # 16 - 40, Barrio San Francisco, Bucaramanga, Colombia</p>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <mat-icon mat-list-icon color="accent">phone_iphone</mat-icon>
+                        <p class="text-footer">304 615 2073 - 304 615 7647 - 304 616 5361</p>
                     </mat-list-item>
                 </mat-list>
             </div>
-            <div fxFlex="33.33" class="footer-item">
-                <div class="mb-1">
-                    <button mat-raised-button mat-lg-button color="accent">Need Help?</button>
-                </div>
-                <div>
-                    <button mat-raised-button mat-lg-button color="accent">BUY NOW</button>
-                </div>
-
+            <div fxFlex="50" class="footer-item social-networks">
+                <mat-list>
+                    <mat-list-item>
+                        <img src="assets/icons/facebook-icon.png">
+                        <p class="text-social-network" (click)="goToFacebook()">FEMOB</p>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <img src="assets/icons/instagram-icon.png">
+                        <p class="text-social-network" (click)="goToInstragam()">Fundacionblanquita</p>
+                    </mat-list-item>
+                </mat-list>
             </div>
         </div>
     </div>
